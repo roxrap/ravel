@@ -1,29 +1,57 @@
 body {
   margin: 0;
-  font-family: Arial;
-  background: #f7f5f2;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
 }
 
 .hero {
   text-align: center;
-  padding: 30px;
-  background: #fff;
+  padding: 40px 20px;
+  background: #000;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.tagline {
+  color: #bbb;
+  margin-top: 10px;
 }
 
 .catalogo {
-  padding: 20px;
+  padding: 30px 20px;
+}
+
+.catalogo h2 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
 .card {
-  background: white;
-  border-radius: 12px;
+  background: #1a1a1a;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card img {
@@ -33,10 +61,28 @@ body {
 }
 
 .card-content {
-  padding: 10px;
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 0 0 10px;
+  color: #ccc;
 }
 
 .porcion {
-  color: gray;
   font-size: 14px;
+  color: #888;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #000;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
 }

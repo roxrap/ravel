@@ -121,10 +121,14 @@ img{
 
 .btn-main,
 .btn-secondary{
-  display:inline-block;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
   padding:14px 22px;
   border-radius:999px;
   font-weight:700;
+  text-decoration:none;
   transition:transform .2s ease, opacity .2s ease, background .2s ease;
 }
 

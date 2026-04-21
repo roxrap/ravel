@@ -1,98 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ravel - Pastas Artesanales</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravel - Pastas Artesanales</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="hero">
-  <img src="images/Logo_Ravel.jpeg" alt="Ravel logo" class="logo">
+  <img src="images/logo.png" class="logo">
   <h1>Ravel</h1>
   <p class="tagline">Pastas artesanales hechas para disfrutar</p>
 </header>
 
 <main>
 
-<!-- PANZOTTIS -->
 <section class="catalogo">
-  <h2>Panzottis</h2>
-  <div class="grid">
+<h2>Panzottis</h2>
+<div class="grid">
 
-    <div class="card">
-      <img src="images/panzotti-cordero.png">
-      <div class="card-content">
-        <h3>Cordero braseado</h3>
-        <p>Pasta rellena con cordero de cocción lenta, sabor intenso.</p>
-        <p class="porcion">🍽️ 8 a 10 unidades</p>
-      </div>
-    </div>
+<div class="card" onclick="abrirModal({
+nombre:'Cordero braseado',
+img:'images/panzotti-cordero.png',
+desc:'Pasta rellena con cordero braseado de cocción lenta.',
+ing:'Masa artesanal, cordero, vegetales',
+tiempo:'5 minutos',
+formato:'Caja de 15 o 30',
+porcion:'8 a 10 unidades',
+salsas:'Hongos, manteca y salvia',
+vinos:'Malbec reserva',
+reco:'🔥 Ideal para ocasiones especiales'
+})">
+<img src="images/panzotti-cordero.png">
+<div class="card-content"><h3>Cordero braseado</h3><p>Intenso y suave</p></div>
+</div>
 
-    <div class="card">
-      <img src="images/panzotti-vacio.png">
-      <div class="card-content">
-        <h3>Vacío al Malbec</h3>
-        <p>Relleno profundo y bien argentino.</p>
-        <p class="porcion">🍽️ 8 a 10 unidades</p>
-      </div>
-    </div>
+<div class="card" onclick="abrirModal({
+nombre:'Vacío al Malbec',
+img:'images/panzotti-vacio.png',
+desc:'Relleno de vacío cocido al Malbec.',
+ing:'Carne vacuna, vino, especias',
+tiempo:'5 minutos',
+formato:'Caja de 15 o 30',
+porcion:'8 a 10 unidades',
+salsas:'Criolla suave, fileto',
+vinos:'Malbec joven',
+reco:'🔥 Sabor argentino'
+})">
+<img src="images/panzotti-vacio.png">
+<div class="card-content"><h3>Vacío al Malbec</h3><p>Clásico argentino</p></div>
+</div>
 
-    <div class="card">
-      <img src="images/panzotti-hongos.png">
-      <div class="card-content">
-        <h3>Hongos con mozzarella</h3>
-        <p>Suave, cremoso y equilibrado.</p>
-        <p class="porcion">🍽️ 8 a 10 unidades</p>
-      </div>
-    </div>
+<div class="card" onclick="abrirModal({
+nombre:'Hongos con mozzarella',
+img:'images/panzotti-hongos.png',
+desc:'Relleno cremoso y equilibrado.',
+ing:'Hongos, mozzarella',
+tiempo:'5 minutos',
+formato:'Caja de 15 o 30',
+porcion:'8 a 10 unidades',
+salsas:'Crema, manteca',
+vinos:'Chardonnay',
+reco:'🌿 Opción vegetariana'
+})">
+<img src="images/panzotti-hongos.png">
+<div class="card-content"><h3>Hongos con mozzarella</h3><p>Suave y cremoso</p></div>
+</div>
 
-    <div class="card">
-      <img src="images/panzotti-langostinos.png">
-      <div class="card-content">
-        <h3>Langostinos al verdeo</h3>
-        <p>Delicado y premium.</p>
-        <p class="porcion">🍽️ 8 unidades</p>
-      </div>
-    </div>
+<div class="card" onclick="abrirModal({
+nombre:'Langostinos al verdeo',
+img:'images/panzotti-langostinos.png',
+desc:'Relleno delicado y premium.',
+ing:'Langostinos, verdeo, mozzarella',
+tiempo:'4-5 minutos',
+formato:'Caja de 15 o 30',
+porcion:'8 unidades',
+salsas:'Crema suave',
+vinos:'Sauvignon Blanc',
+reco:'🦐 Premium'
+})">
+<img src="images/panzotti-langostinos.png">
+<div class="card-content"><h3>Langostinos</h3><p>Premium</p></div>
+</div>
 
-  </div>
+</div>
 </section>
 
-<!-- SORRENTINOS -->
 <section class="catalogo">
-  <h2>Sorrentinos</h2>
-  <div class="grid">
+<h2>Sorrentinos</h2>
+<div class="grid">
 
-    <div class="card">
-      <img src="images/sorrentino-jamon.png">
-      <div class="card-content">
-        <h3>Jamón crudo y rúcula</h3>
-        <p>Clásico gourmet equilibrado.</p>
-        <p class="porcion">🍽️ 6 a 8 unidades</p>
-      </div>
-    </div>
+<div class="card" onclick="abrirModal({
+nombre:'Jamón crudo y rúcula',
+img:'images/sorrentino-jamon.png',
+desc:'Combinación fresca e intensa.',
+ing:'Jamón crudo, rúcula, mozzarella',
+tiempo:'5 minutos',
+formato:'Caja de 12 o 24',
+porcion:'6 a 8 unidades',
+salsas:'Fileto, oliva',
+vinos:'Pinot Noir',
+reco:'🧀 Clásico gourmet'
+})">
+<img src="images/sorrentino-jamon.png">
+<div class="card-content"><h3>Jamón y rúcula</h3><p>Gourmet</p></div>
+</div>
 
-    <div class="card">
-      <img src="images/sorrentino-salmon.png">
-      <div class="card-content">
-        <h3>Salmón rosado</h3>
-        <p>Suave, delicado y sofisticado.</p>
-        <p class="porcion">🍽️ 6 a 8 unidades</p>
-      </div>
-    </div>
+<div class="card" onclick="abrirModal({
+nombre:'Salmón rosado',
+img:'images/sorrentino-salmon.png',
+desc:'Relleno delicado con manteca de hierbas.',
+ing:'Salmón, queso crema, hierbas',
+tiempo:'4-5 minutos',
+formato:'Caja de 12 o 24',
+porcion:'6 a 8 unidades',
+salsas:'Manteca de hierbas',
+vinos:'Chardonnay',
+reco:'🐟 Sofisticado'
+})">
+<img src="images/sorrentino-salmon.png">
+<div class="card-content"><h3>Salmón rosado</h3><p>Sofisticado</p></div>
+</div>
 
-  </div>
+</div>
 </section>
 
 </main>
 
 <footer class="footer">
-  <p>📍 Ravel Pastas</p>
-  <p>📞 WhatsApp: +54 9 3492 58 3802</p>
-  <p>📸 Instagram: @ravelpastas</p>
+<p>📞 <a href="https://wa.me/549XXXXXXXXXX" target="_blank">WhatsApp</a></p>
+<p>📸 <a href="https://www.instagram.com/ravel_pastas_artesanales/" target="_blank">Instagram</a></p>
+<p>📍 <a href="https://www.google.com/maps/dir//Ravel+Pastas+Artesanales,+Blvd.+Hip%C3%B3lito+Yrigoyen+581,+S2300+Rafaela,+Santa+Fe/" target="_blank">Cómo llegar</a></p>
+<p>⭐ <a href="https://share.google/kHQnGvqLb0kr8rIkU" target="_blank">Ver reseñas</a></p>
 </footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="cerrarModal()">&times;</span>
+<img id="modal-img">
+<h2 id="modal-nombre"></h2>
+<p id="modal-desc"></p>
+<p><b>Ingredientes:</b> <span id="modal-ing"></span></p>
+<p><b>Cocción:</b> <span id="modal-tiempo"></span></p>
+<p><b>Formato:</b> <span id="modal-formato"></span></p>
+<p><b>Porción:</b> <span id="modal-porcion"></span></p>
+<p><b>Salsas:</b> <span id="modal-salsas"></span></p>
+<p><b>Vinos:</b> <span id="modal-vinos"></span></p>
+<p id="modal-reco"></p>
+
+<a id="whatsapp-btn" target="_blank" class="btn-wsp">Pedir por WhatsApp</a>
+</div>
+</div>
+
+<script>
+function abrirModal(d){
+document.getElementById("modal").style.display="flex";
+document.getElementById("modal-img").src=d.img;
+document.getElementById("modal-nombre").innerText=d.nombre;
+document.getElementById("modal-desc").innerText=d.desc;
+document.getElementById("modal-ing").innerText=d.ing;
+document.getElementById("modal-tiempo").innerText=d.tiempo;
+document.getElementById("modal-formato").innerText=d.formato;
+document.getElementById("modal-porcion").innerText=d.porcion;
+document.getElementById("modal-salsas").innerText=d.salsas;
+document.getElementById("modal-vinos").innerText=d.vinos;
+document.getElementById("modal-reco").innerText=d.reco;
+
+let msg=encodeURIComponent("Hola! Quiero pedir: "+d.nombre);
+document.getElementById("whatsapp-btn").href="https://wa.me/549XXXXXXXXXX?text="+msg;
+}
+function cerrarModal(){document.getElementById("modal").style.display="none";}
+</script>
 
 </body>
 </html>

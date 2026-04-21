@@ -32,7 +32,7 @@ img{
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:40px 20px 90px;
+  padding:40px 20px 48px;
   color:#fff;
   border-bottom:1px solid rgba(255,255,255,0.08);
 }
@@ -115,6 +115,7 @@ img{
   margin-top:28px;
   display:flex;
   justify-content:center;
+  align-items:center;
   gap:12px;
   flex-wrap:wrap;
 }
@@ -129,13 +130,20 @@ img{
   border-radius:999px;
   font-weight:700;
   text-decoration:none;
-  transition:transform .2s ease, opacity .2s ease, background .2s ease;
+  transition:transform .2s ease, opacity .2s ease, background .2s ease, box-shadow .2s ease;
 }
 
 .btn-main{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
+  background:#25D366;
+  color:#fff;
+  box-shadow:0 8px 20px rgba(37,211,102,0.25);
+}
+
+.btn-main svg{
+  width:18px;
+  height:18px;
+  display:block;
+  flex-shrink:0;
 }
 
 .btn-secondary{
@@ -150,27 +158,8 @@ img{
   opacity:.97;
 }
 
-.hero-bottom-bar{
-  position:absolute;
-  left:50%;
-  bottom:22px;
-  transform:translateX(-50%);
-  z-index:2;
-  width:min(92%, 980px);
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-}
-
-.hero-bottom-item{
-  background:rgba(255,255,255,0.10);
-  backdrop-filter:blur(8px);
-  border:1px solid rgba(255,255,255,0.14);
-  color:#fff;
-  padding:14px 12px;
-  border-radius:18px;
-  font-size:14px;
-  font-weight:600;
+.btn-main:hover{
+  box-shadow:0 12px 28px rgba(37,211,102,0.32);
 }
 
 /* CATALOGO */
@@ -384,73 +373,8 @@ img{
   color:#8f8f8f;
 }
 
-@media (max-width:900px){
-  .footer-links{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
+/* BOTON FLOTANTE WHATSAPP */
 
-@media (max-width:640px){
-  .footer-brand h3{
-    font-size:28px;
-  }
-
-  .footer-links{
-    grid-template-columns:1fr;
-  }
-}
-
-/* RESPONSIVE */
-
-@media (max-width:900px){
-  .hero-bottom-bar{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media (max-width:640px){
-  .hero-gastro{
-    min-height:72vh;
-    padding:34px 16px 110px;
-  }
-
-  .hero h1{
-    font-size:40px;
-  }
-
-  .tagline{
-    font-size:18px;
-  }
-
-  .hero-description{
-    font-size:15px;
-  }
-
-  .catalogo{
-    padding:24px 16px;
-  }
-
-  .catalogo h2{
-    font-size:24px;
-  }
-
-  .card img{
-    height:200px;
-  }
-
-  .footer-links{
-    grid-template-columns:1fr;
-  }
-
-  .hero-bottom-bar{
-    grid-template-columns:1fr;
-    bottom:16px;
-  }
-
-  .hero-bottom-item{
-    font-size:13px;
-  }
-}
 .whatsapp-float{
   position:fixed;
   right:18px;
@@ -502,7 +426,52 @@ img{
   }
 }
 
+/* RESPONSIVE */
+
+@media (max-width:900px){
+  .footer-links{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
 @media (max-width:640px){
+  .hero-gastro{
+    min-height:72vh;
+    padding:34px 16px 40px;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .tagline{
+    font-size:18px;
+  }
+
+  .hero-description{
+    font-size:15px;
+  }
+
+  .catalogo{
+    padding:24px 16px;
+  }
+
+  .catalogo h2{
+    font-size:24px;
+  }
+
+  .card img{
+    height:200px;
+  }
+
+  .footer-brand h3{
+    font-size:28px;
+  }
+
+  .footer-links{
+    grid-template-columns:1fr;
+  }
+
   .whatsapp-float{
     right:14px;
     bottom:14px;
